@@ -1,73 +1,123 @@
-# React + TypeScript + Vite
+# isa-portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern single-page application (SPA) built with React v18, TypeScript, Vite, and SCSS modules.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React v18.3.1** - Modern React with TypeScript
+- **Vite v7.2.2** - Lightning-fast build tool and dev server
+- **SCSS Modules** - Scoped styling with SCSS preprocessing
+- **TypeScript** - Type-safe development
+- **ESLint** - Code quality and consistency
 
-## React Compiler
+## 📦 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (v18 or higher recommended)
+- npm (comes with Node.js)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Start the development server with hot module replacement:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+The application will be available at `http://localhost:5173/`
+
+### Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+The build output will be in the `dist/` directory, ready for deployment.
+
+### Preview
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+### Linting
+
+Run ESLint to check code quality:
+
+```bash
+npm run lint
+```
+
+## 🏗️ Project Structure
+
+```
+isa-portfolio/
+├── src/
+│   ├── assets/          # Static assets (images, icons, etc.)
+│   ├── App.module.scss  # Component-level SCSS module
+│   ├── App.tsx          # Main App component
+│   ├── index.scss       # Global styles
+│   ├── main.tsx         # Application entry point
+│   └── vite-env.d.ts    # Vite and SCSS module type definitions
+├── public/              # Public static assets
+├── index.html           # HTML entry point
+├── vite.config.ts       # Vite configuration
+├── tsconfig.json        # TypeScript configuration
+└── package.json         # Project dependencies and scripts
+```
+
+## 🎨 Using SCSS Modules
+
+SCSS modules provide scoped styling to prevent CSS conflicts:
+
+```tsx
+// Import the styles
+import styles from './App.module.scss'
+
+// Use in your component
+<div className={styles.myClass}>Content</div>
+```
+
+For global styles, use the `index.scss` file.
+
+## 🔧 Configuration
+
+The project is configured for scalability and simplicity:
+
+- **Vite** handles all bundling and dev server needs
+- **TypeScript** provides type safety with strict mode enabled
+- **SCSS Modules** ensure component-level style encapsulation
+- **ESLint** maintains code quality with React-specific rules
+
+## 📝 Scripts Reference
+
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+
+## 🌟 Features
+
+- ⚡️ Lightning-fast HMR with Vite
+- 🎯 Type-safe development with TypeScript
+- 🎨 Modular SCSS with scoped styles
+- 📦 Optimized production builds
+- 🔍 Linting with ESLint
+- 🚀 Simple deployment-ready output
+
+## 📄 License
+
+This project is private.
