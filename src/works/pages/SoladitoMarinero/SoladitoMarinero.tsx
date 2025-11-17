@@ -1,6 +1,8 @@
+import cs from "./SoladitoMarinero.module.scss";
+
 export const SoladitoMarinero = () => {
   return (
-    <section>
+    <section className={cs.soladito}>
       <br />
       <p>
         soldadito marinero
@@ -30,6 +32,13 @@ export const SoladitoMarinero = () => {
         <br />
         tus olas no se lo lleven.
       </p>
+      <br />
+      <br />
+      <br />
+      <i>
+        Respuesta a la canción “Soldadito Marinero” Fito y Fitipaldis . (junio
+        2023)
+      </i>
     </section>
   );
 };
