@@ -18,6 +18,8 @@
   --fg: var(--cream);
   color: var(--cream);
   background-color: var(--black);
+  overflow: hidden;
+  touch-action: none;
 }
 
 a {
