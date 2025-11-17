@@ -3,6 +3,8 @@
   width: 100%;
   border: 14px solid var(--fg);
   padding: 14px;
+  overflow: hidden;
+  touch-action: none;
 }
 
 .content {

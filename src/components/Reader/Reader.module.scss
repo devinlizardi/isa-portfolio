@@ -1,3 +1,9 @@
+.readerWrapper {
+  padding: 16px;
+  overflow: scroll;
+  touch-action: auto;
+}
+
 .readerTitle {
   font-size: 24px;
   text-align: center;
