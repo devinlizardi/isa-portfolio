@@ -3,7 +3,7 @@ import { ParaMiAbuela } from "./pages/Abuela/ParaMiAbuela";
 import { WhatsInABox } from "./pages/Box/WhatsInABox";
 import { Escondida } from "./pages/Escondida/Escondida";
 import { SoladitoMarinero } from "./pages/SoladitoMarinero/SoladitoMarinero";
-import { TheAsleepMind } from "./pages/TheAsleepMind";
+import { TheAsleepMind } from "./pages/Asleep/TheAsleepMind";
 
 export const works: WorkItem[] = [
   { title: "the asleep mind", year: "2025", element: <TheAsleepMind /> },
