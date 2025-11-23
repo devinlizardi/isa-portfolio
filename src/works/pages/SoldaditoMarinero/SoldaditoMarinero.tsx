@@ -21,7 +21,7 @@ export const SoldaditoMarinero = () => {
       <br />
       <br />
       <p>
-        sirenita tomentosa
+        sirenita tormentosa
         <br />
         <br />
         conociste al más bueno.
@@ -35,9 +35,7 @@ export const SoldaditoMarinero = () => {
       <br />
       <br />
       <br />
-      <i>
-        Respuesta a la canción “Soldadito Marinero” Fito y Fitipaldis
-      </i>
+      <i>Respuesta a la canción “Soldadito Marinero” Fito y Fitipaldis</i>
     </section>
   );
 };
