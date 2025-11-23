@@ -100,7 +100,7 @@ export const ParaMiAbuela = () => {
         </ul>
         <p>
           <span className={cs.indent} />
-          In the moments above, borders are places of OUTER complexity and
+          In the moments above, borders are places of outer complexity and
           confusion but also of intersection and understanding.
         </p>
         <p>

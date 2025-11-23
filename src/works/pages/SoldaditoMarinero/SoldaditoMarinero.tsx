@@ -1,8 +1,8 @@
-import cs from "./SoladitoMarinero.module.scss";
+import cs from "./SoldaditoMarinero.module.scss";
 
-export const SoladitoMarinero = () => {
+export const SoldaditoMarinero = () => {
   return (
-    <section className={cs.soladito}>
+    <section className={cs.soldadito}>
       <br />
       <p>
         soldadito marinero
@@ -36,8 +36,7 @@ export const SoladitoMarinero = () => {
       <br />
       <br />
       <i>
-        Respuesta a la canción “Soldadito Marinero” Fito y Fitipaldis . (junio
-        2023)
+        Respuesta a la canción “Soldadito Marinero” Fito y Fitipaldis
       </i>
     </section>
   );

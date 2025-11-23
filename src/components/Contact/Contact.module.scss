@@ -1,0 +1,24 @@
+.contactPage {
+  margin: 12px;
+  line-height: 145%;
+  font-size: 18px;
+  & > p {
+    text-align: center;
+  }
+}
+
+.contactTitle {
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  color: var(--fg);
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--fg);
+}
+
+.frame {
+  height: 100%;
+  width: 100%;
+  border: 14px solid var(--fg);
+  padding: 14px;
+}
