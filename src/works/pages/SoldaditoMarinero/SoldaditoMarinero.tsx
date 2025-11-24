@@ -16,7 +16,7 @@ export const SoldaditoMarinero = () => {
         <br />
         Hay que ver qué puntería tienes
         <br />
-        <br />Y cómo es esta sirena.
+        <br />y cómo es esta sirena.
       </p>
       <br />
       <br />
