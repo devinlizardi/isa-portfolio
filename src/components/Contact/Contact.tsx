@@ -8,8 +8,11 @@ export const Contact = () => {
         <Hamburger />
         <h1 className={cs.contactTitle}>Contact</h1>
         <p>
-          <b>Isabella Guerra Uccelli </b>is a spanish and english language
-          writer and researcher
+          <b>Isabella Guerra Uccelli </b>is a Spanish and English language
+          writer and researcher. Her creative writing vary in style and are
+          inspired from personal experience. Some of her writing is bilingual,
+          transitioning from one language to another. Born in Boston,
+          Massachusetts, she is of Peruvian and Puerto Rican background.
         </p>
         <img rel="preload" src="/isabella.jpg" />
         <br />

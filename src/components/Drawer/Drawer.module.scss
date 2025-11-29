@@ -1,0 +1,53 @@
+.menu {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  color: var(--cream);
+  touch-action: none;
+  padding: 16px;
+}
+
+.closeX {
+  color: white;
+  background: none;
+  width: 24px;
+  aspect-ratio: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block {
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  margin-left: 2px;
+  background-color: var(--cream);
+}
+
+.menuListWrapper {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  margin-top: 80px;
+}
+
+.menuList {
+  font-size: 20px;
+  list-style: none;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  & > :first-child {
+    background-color: var(--cream);
+    color: var(--black);
+  }
+  & > li {
+    margin-bottom: 32px;
+  }
+}
