@@ -17,7 +17,36 @@
   justify-items: flex-start;
   width: 100%;
   font-size: 20px;
+  padding: 16px 12px;
+  position: relative;
   & > i {
     font-size: 18px;
+  }
+  // click icon
+  &::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    aspect-ratio: 1;
+    right: 16px;
+    top: calc(50% - 12px);
+    visibility: hidden;
+    background-color: var(--bg);
+    mask-image: url("/caret.svg");
+    mask-position: center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url("/caret.svg");
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+  }
+  &:hover {
+    background-color: var(--fg);
+    color: var(--bg);
+    &::after {
+      visibility: visible;
+    }
   }
 }
