@@ -14,7 +14,6 @@ export const WorkList = () => {
           </Link>
         </h1>
         <h2 className={scs.works}>Works</h2>
-        <div className={scs.line} />
         <div className={scs.workList}>
           {works.map((work) => {
             const { title, year } = work;
@@ -28,13 +27,13 @@ export const WorkList = () => {
             );
           })}
         </div>
+        <footer>
+          <b>
+            <NavLink to="/contact">Contact</NavLink>
+          </b>
+          <p>© All rights reserved</p>
+        </footer>
       </div>
-      <footer>
-        <b>
-          <NavLink to="/contact">Contact</NavLink>
-        </b>
-        <p>© All rights reserved</p>
-      </footer>
     </div>
   );
 };

@@ -8,8 +8,10 @@
 
 .content {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .workItem {
@@ -50,6 +52,14 @@
       visibility: visible;
     }
   }
+
+  @media screen and (max-height: 605px) {
+    padding: 6px 12px;
+  }
+
+  @media screen and (max-height: 508px) {
+    padding: 2px 12px;
+  }
 }
 
 footer {
@@ -57,8 +67,6 @@ footer {
   width: calc(100% - 28px);
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  bottom: 2%;
   border-top: 2px solid var(--fg);
   padding-top: 8px;
   & > p {
