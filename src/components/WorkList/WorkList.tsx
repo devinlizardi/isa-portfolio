@@ -29,6 +29,12 @@ export const WorkList = () => {
           })}
         </div>
       </div>
+      <footer>
+        <b>
+          <NavLink to="/contact">Contact</NavLink>
+        </b>
+        <p>© All rights reserved</p>
+      </footer>
     </div>
   );
 };

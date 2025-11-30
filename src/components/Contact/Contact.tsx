@@ -6,7 +6,6 @@ export const Contact = () => {
     <div className={cs.frame}>
       <div className={cs.contactPage}>
         <Hamburger />
-        <h1 className={cs.contactTitle}>Contact</h1>
         <p>
           <b>Isabella Guerra Uccelli </b>is a Spanish and English language
           writer and researcher. Her creative writing vary in style and are

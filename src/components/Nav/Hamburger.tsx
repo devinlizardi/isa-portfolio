@@ -13,7 +13,7 @@ export const Hamburger = () => {
       >
         <span className={cn(cs.hamburgerLine, { [cs.open]: menu })} />
         <span className={cn(cs.hamburgerLine, { [cs.open]: menu })} />
-        <span className={cn(cs.hamburgerLine, { [cs.open]: menu })} />
+        {!menu && <span className={cn(cs.hamburgerLine)} />}
       </button>
       {menu && <Drawer close={() => setMenu(false)} />}
     </>

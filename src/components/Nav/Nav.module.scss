@@ -13,7 +13,12 @@
   width: 20px;
   height: 2px;
   background-color: var(--fg);
+  transition: transform 100ms;
   &.open {
     background-color: var(--cream);
+    transform: rotate(-45deg) translateY(-4px);
+    &:first-child {
+      transform: rotate(45deg) translateY(4px);
+    }
   }
 }

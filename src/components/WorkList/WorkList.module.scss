@@ -1,4 +1,5 @@
 .frame {
+  position: relative;
   height: 100%;
   width: 100%;
   border: 14px solid var(--fg);
@@ -48,5 +49,20 @@
     &::after {
       visibility: visible;
     }
+  }
+}
+
+footer {
+  display: flex;
+  width: calc(100% - 28px);
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 2%;
+  border-top: 2px solid var(--fg);
+  padding-top: 8px;
+  & > p {
+    font-size: 12px;
+    margin: 0;
   }
 }
