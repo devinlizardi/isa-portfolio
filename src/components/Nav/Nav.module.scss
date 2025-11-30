@@ -1,3 +1,19 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &.open {
+    position: relative;
+    z-index: 100;
+  }
+}
+
 .hamburgerLine {
-  stroke: var(--fg);
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--fg);
+  &.open {
+    background-color: var(--cream);
+  }
 }
