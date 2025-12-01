@@ -7,6 +7,7 @@
   color: var(--cream);
   touch-action: none;
   padding: 16px;
+  animation: 200ms SlideIn ease;
 }
 
 .closeX {
@@ -43,11 +44,33 @@
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-right: 32px;
   & > :first-child {
-    background-color: var(--cream);
     color: var(--black);
+    position: relative;
+    z-index: 10;
+    & > :first-child::after {
+      content: "";
+      display: inline-block;
+      z-index: -1;
+      position: absolute;
+      left: -5%;
+      width: 100%;
+      height: 25px;
+      background-color: var(--cream);
+      animation: 600ms SlideIn ease;
+    }
   }
   & > li {
     margin-bottom: 32px;
+  }
+}
+
+@keyframes SlideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
