@@ -1,3 +1,4 @@
+@use "./components/variables.scss" as vars;
 .frame {
   height: 100%;
   width: 100%;
@@ -19,6 +20,13 @@
   padding: 12px;
   margin: 0;
   width: 100%;
+  @media screen and (min-width: vars.$desktop-breakpoint) {
+    max-width: 400px;
+    max-height: 216px;
+    margin-top: 64px;
+    padding: 12px 12px 24px 24px;
+    font-size: 40px;
+  }
 }
 
 .works {
@@ -28,9 +36,17 @@
   margin-bottom: 0;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--fg);
+  @media screen and (min-width: vars.$desktop-breakpoint) {
+    margin-top: 64px;
+    font-size: 28px;
+  }
 }
 
 .workList {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: vars.$desktop-breakpoint) {
+    min-width: 424px;
+    margin-top: 40px;
+  }
 }

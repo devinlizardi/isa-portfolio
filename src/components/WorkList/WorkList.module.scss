@@ -1,3 +1,4 @@
+@use "../variables.scss" as vars;
 .frame {
   position: relative;
   height: 100%;
@@ -12,6 +13,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (min-width: vars.$desktop-breakpoint) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+  }
 }
 
 .workItem {
@@ -60,6 +66,12 @@
   @media screen and (max-height: 508px) {
     padding: 2px 12px;
   }
+  @media screen and (min-width: vars.$desktop-breakpoint) {
+    padding: 24px 12px;
+    @media screen and (max-height: 650px) {
+      padding: 12px;
+    }
+  }
 }
 
 footer {
@@ -73,5 +85,19 @@ footer {
   & > p {
     font-size: 12px;
     margin: 0;
+  }
+  @media screen and (min-width: vars.$desktop-breakpoint) {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    opacity: 1;
+    & > b {
+      font-size: 24px;
+      width: 380px;
+      padding-top: 4px;
+      border-top: 2px solid var(--black);
+      $left: calc((100vw - 400px - 450px) / 3);
+      transform: translateY(-200%) translateX($left);
+    }
   }
 }
