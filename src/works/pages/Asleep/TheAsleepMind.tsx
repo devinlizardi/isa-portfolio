@@ -42,16 +42,16 @@ export const TheAsleepMind = () => {
         There was a girl laying down in the field seen from above, nothing to
         see but grass. Whether she was the girl, she did not know. These were
         the images recalled in the shower. As she made breakfast and coffee, she
-        tried to piece them together. In the morning she had woken up deep in
-        the middle of a story that she wanted to continue to be a part of. Now,
-        she just had a couple images. How did it go? She was getting frustrated
-        at herself for not being able to remember when just a few minutes ago
-        she had been living it. As she finished making breakfast, those images
-        slipped her mind. She tried to reconstruct them. Tried to relive the
-        shower. Tried to remember any small detail about what the dream had been
-        about. Nothing came to her. She accepted that her memories had been
-        forgotten, as vivid and as real as they had been. And she continued on
-        with her day.
+        tried to piece them together. She had woken up deep in the middle of a
+        story that she wanted to continue to be a part of. Now, she just had a
+        couple images. How did it go? She was getting frustrated at herself for
+        not being able to remember when just a few minutes ago she had been
+        living it. As she finished making breakfast, those images slipped her
+        mind. She tried to reconstruct them. Tried to relive the shower. Tried
+        to remember any small detail about what the dream had been about.
+        Nothing came to her. She accepted that her memories had been forgotten,
+        as vivid and as real as they had been. And she continued on with her
+        day.
       </p>
       <br />
       <h3 className={cs.sectionSubtitle}>II.</h3>
