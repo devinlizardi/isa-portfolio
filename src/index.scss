@@ -12,10 +12,13 @@
 
   --black: #0c0a07;
   --cream: #ede9e0;
+  --desktop-light-cream: #f4f0e7;
+  --desktop-light-black: #161513;
 
   // dark color scheme
   --bg: var(--black);
   --fg: var(--cream);
+  --desktop-viewer-bg: var(--desktop-light-black);
   color: var(--cream);
   background-color: var(--black);
 }
@@ -54,5 +57,6 @@ button {
     background-color: var(--cream);
     --bg: var(--cream);
     --fg: var(--black);
+    --desktop-viewer-bg: var(--desktop-light-cream);
   }
 }
