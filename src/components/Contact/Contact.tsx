@@ -1,4 +1,5 @@
 import { useSurface } from "../../hooks/useSurface";
+import { DesktopHeader } from "../DesktopHeader/DesktopHeader";
 import { Hamburger } from "../Nav/Hamburger";
 import cs from "./Contact.module.scss";
 
@@ -9,7 +10,8 @@ export const Contact = () => {
   return (
     <div className={cs.frame}>
       <div className={cs.contactPage}>
-        <Hamburger />
+        {!isDesktop && <Hamburger />}
+        {isDesktop && <DesktopHeader />}
         <p>
           <b>Isabella Guerra Uccelli </b>is a bilingual, Spanish and English
           language writer and researcher. Her creative writing varies in style
@@ -24,9 +26,9 @@ export const Contact = () => {
         <img rel="preload" src="/isabella.jpg" />
         <br />
         <p>
-          Reach her via{" "}
+          Reach her at {" "}
           <a className={cs.email} href="mailto:iguerrauccelli@gmail.com">
-            email
+            iguerrauccelli@gmail.com
           </a>
         </p>
       </div>
