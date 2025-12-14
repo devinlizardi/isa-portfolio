@@ -17,7 +17,7 @@ export const Contact = () => {
         {isDesktop && <DesktopHeader />}
         {!espanol && (
           <p>
-            <b>Isabella Guerra Uccelli </b>is a bilingual, Spanish and English
+            <b>Isabella Guerra Uccelli </b>is a bilingual Spanish and English
             language writer and researcher. Her creative writing varies in style
             and her works are inspired from personal experience. In some of her
             writing, she chooses to intercalate both of her native languages
