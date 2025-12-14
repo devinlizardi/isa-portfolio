@@ -4,10 +4,13 @@ import { Link, NavLink } from "react-router";
 import { formatRoute } from "./formatRoute";
 import { works } from "../../works/works";
 import { useSurface } from "../../hooks/useSurface";
+import { getBrowserLanguage } from "../../helpers/getBrowserLanguage";
 
 export const WorkList = () => {
   const surface = useSurface();
   const isDesktop = surface === "desktop";
+  const language = getBrowserLanguage();
+  const espanol = language.includes("es");
 
   return (
     <div className={cs.frame}>
@@ -18,7 +21,8 @@ export const WorkList = () => {
           </Link>
         </h1>
         <div>
-          <h2 className={scs.works}>Works</h2>
+          {!espanol && <h2 className={scs.works}>Works</h2>}
+          {espanol && <h2 className={scs.works}>Obras</h2>}
           <div className={scs.workList}>
             {works.map((work) => {
               const { title, year } = work;
