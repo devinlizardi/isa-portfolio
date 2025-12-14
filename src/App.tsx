@@ -10,8 +10,13 @@ function App() {
     const ogDescription = document.querySelector(
       'meta[property="og:description"]',
     );
+    const description = document.querySelector('meta[property="description"]');
     if (espanol) {
       ogDescription?.setAttribute(
+        "content",
+        "Isabella Guerra Uccelli es una escritora e investigadora bilingüe en inglés y español.",
+      );
+      description?.setAttribute(
         "content",
         "Isabella Guerra Uccelli es una escritora e investigadora bilingüe en inglés y español.",
       );
