@@ -3,6 +3,10 @@
   padding: 16px;
   overflow: scroll;
   touch-action: auto;
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
   @media screen and (min-width: vars.$desktop-breakpoint) {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,10 @@
       background: var(--desktop-viewer-bg);
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
       padding: 74px;
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Edge */
+      }
     }
   }
 }
